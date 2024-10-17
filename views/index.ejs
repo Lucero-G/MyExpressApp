@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Bienvenido a <%= title %>. Estamos encantados de tenerte aquí. Explora nuestra aplicación y descubre todas las increíbles características que tenemos para ofrecerte.</p>
+      <a href="#" class="btn" id="exploreBtn">Explorar</a>
+  </div>
+
+  <script>
+      document.getElementById('exploreBtn').addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('¡Gracias por tu interés! Pronto podrás explorar más.');
+      });
+  </script>
+  </body>
+</html>

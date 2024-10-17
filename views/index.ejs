@@ -11,11 +11,23 @@
       <a href="#" class="btn" id="exploreBtn">Explorar</a>
   </div>
 
-  <script>
+    <div class="custom-alert" id="customAlert">
+      ¡Gracias por tu interés! Pronto podrás explorar más.
+    </div>
+
+    <script>
       document.getElementById('exploreBtn').addEventListener('click', function(e) {
           e.preventDefault();
-          alert('¡Gracias por tu interés! Pronto podrás explorar más.');
+          showCustomAlert();
       });
-  </script>
+
+      function showCustomAlert() {
+          const alert = document.getElementById('customAlert');
+          alert.classList.add('show');
+          setTimeout(() => {
+              alert.classList.remove('show');
+          }, 3000);
+      }
+    </script>
   </body>
 </html>
